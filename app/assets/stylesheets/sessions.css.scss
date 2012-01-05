@@ -1,0 +1,14 @@
+@import "bootstrap"; /* Use this to get all of Bootstrap's @mixins and $variables */
+
+// Place all the styles related to the Sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div#login {
+	background-color: $grayLight;
+	border: 10px solid $grayDark;
+	
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}

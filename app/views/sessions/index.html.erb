@@ -1,0 +1,22 @@
+<div id="login">
+	<%= form_tag "/auth/identity/callback" do %>
+		<div class="clearfix">
+			<%= label_tag :auth_key, "Email" %>
+			<div class="input">
+				<%= text_field_tag :auth_key %>
+			</div>
+		</div>
+		<div class="clearfix">
+			<%= label_tag :password %>
+			<div class="input">
+				<%= password_field_tag :password %>
+			</div>
+		</div>
+		<%= submit_tag "Login", { :class => 'btn'} %>
+	<% end %>
+	
+	
+	<%= link_to image_tag("icons/twitter.png"), "/auth/twitter" %>	
+	<%= link_to image_tag("icons/facebook.png"), "#" %>
+	<%= link_to image_tag("icons/google.png"), "#" %>
+</div>
