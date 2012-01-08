@@ -1,3 +1,127 @@
-// Place all the styles related to the Products controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+ul.products {
+	
+	padding-top: 20px;
+	padding-right: 70px;
+	
+	
+	li {
+		display: block;
+		float: left;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		
+		&.cat {
+			color: $grayDark;
+			text-shadow: 0 1px 1px rgba(255,255,255,.35);
+			padding-top: 10px;
+			font-size: 30px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		
+		&.product {
+			padding: 10px;
+			text-shadow: 0 1px 1px rgba(255,255,255,.35);
+			text-transform: lowercase;
+		
+			@include border-radius(3px);
+			@include box-shadow(0 4px 5px rgba(0,0,0,.3));
+			
+			a {
+				text-decoration: none;
+				display: block;
+				width: 100%;
+				
+				&:hover {
+					background-image: url(icons/basket.png);
+					background-repeat: no-repeat;
+					background-position: 100%;
+				}
+			}
+		
+			&.blue-light {
+				border-top: 1px solid #a1cdde;
+				@include vertical-gradient(#65acc8, #4586ae);
+				
+				a {
+					color: rgba(25,45,55,.9);
+				}
+			}
+		
+			&.blue {
+				border-top: 1px solid #a1cdde;
+				@include vertical-gradient(#1BA1FA, #1E6B9E);
+				
+				a {
+					color: rgba(25,45,55,.9);
+				}
+			}
+		
+			&.pink {
+				border-top: 1px solid #f3a2cd;
+				@include vertical-gradient(#ea66ac, #da3868);
+				
+				a {
+					color: rgba(74,4,32,1);
+				}
+			}
+		
+			&.red-light {
+				border-top: 1px solid #f39a9e;
+				@include vertical-gradient(#eb5a5f, #e13c41);
+				
+				a {
+					color: rgba(69,22,24,1);
+				}
+			}
+		
+			&.red {
+				border-top: 1px solid #f39a9e;
+				@include vertical-gradient(#F71E46, #B30E2C);
+				
+				a {
+					color: rgba(69,22,24,1);
+				}
+			}
+		
+			&.green-light {
+				border-top: 1px solid #B2E391;
+				@include vertical-gradient(#5ACC0E, #3F8A0C);
+				
+				a {
+					color: rgba(22,33,16,1);
+				}
+			}
+		
+			&.green {
+				border-top: 1px solid #B2E391;
+				@include vertical-gradient(#37B514, #1D820C);
+				
+				a {
+					color: rgba(22,33,16,1);
+				}
+			}
+		
+			&.orange {
+				border-top: 1px solid #F2B66D;
+				@include vertical-gradient(#FF8C00, #A85F05);
+				
+				a {
+					color: rgba(69,22,24,1);
+				}
+			}
+		
+			&:hover {
+				padding-right: 70px;
+				transition: all ease-out 1s;
+				-moz-transition: all ease-out 1s;
+				-webkit-transition: all ease-out 1s;
+				-o-transition: all ease-out 1s;
+			}
+		}
+	}
+}
+

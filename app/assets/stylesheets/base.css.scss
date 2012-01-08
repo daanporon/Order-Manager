@@ -1,0 +1,21 @@
+@import "bootstrap";
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;	
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	@include directional-gradient($gray -0%, $grayDark 100%, -45deg);
+}
+
+.container {
+	width: auto;
+}
+
+.content {
+	padding-top: 40px;
+}

@@ -8,8 +8,27 @@
 </head>
 <body>
 
+<div class="topbar-wrapper" style="z-index: 5;">
+	<div class="topbar" data-dropdown="dropdown">
+		<div class="topbar-inner">
+			<div class="container">
+				<h3><a href="#">OrderManager</a></h3>
+				<ul class="nav">
+					<li class="active"><a href="#">Dagelijks broodje</a></li>
+					<li><a href="#">Den beenhouwer</a></li>
+				</ul>
+				<ul class="nav secondary-nav">
+					<li><a href="#">cart</a></li>
+				</ul>
+			</div>
+		</div><!-- /topbar-inner -->
+	</div><!-- /topbar -->
+</div>
+
 <div class="container">
-	<%= yield %>
+	<div class="content">
+		<%= yield %>
+	</div>
 </div>
 
 </body>
