@@ -8,3 +8,7 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+
+jQuery("document").ready(function() {
+	$('.type-filter li a').twipsy({})
+});

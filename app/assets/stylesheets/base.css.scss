@@ -12,10 +12,18 @@ body {
 	@include directional-gradient($gray -0%, $grayDark 100%, -45deg);
 }
 
+.topbar {
+	
+	h3 {
+		padding-left: 10px;
+	}
+}
+
 .container {
 	width: auto;
 }
 
 .content {
-	padding-top: 40px;
+	padding: 40px;
+	
 }
