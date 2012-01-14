@@ -12,11 +12,14 @@
 				<%= password_field_tag :password %>
 			</div>
 		</div>
-		<%= submit_tag "Login", { :class => 'btn'} %>
+		
+		<div class="actions">
+			<%= submit_tag "Login", { :class => 'btn primary'} %>
+			<%= submit_tag "Register", { :class => 'btn'} %>
+			<p>Or login using one of the following .. </p>
+			<%= link_to image_tag("icons/twitter.png"), "/auth/twitter" %>	
+			<%= link_to image_tag("icons/facebook.png"), "#" %>
+			<%= link_to image_tag("icons/google.png"), "#" %>
+		</div>
 	<% end %>
-	
-	
-	<%= link_to image_tag("icons/twitter.png"), "/auth/twitter" %>	
-	<%= link_to image_tag("icons/facebook.png"), "#" %>
-	<%= link_to image_tag("icons/google.png"), "#" %>
 </div>

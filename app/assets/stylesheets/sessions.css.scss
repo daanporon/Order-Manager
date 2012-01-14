@@ -1,10 +1,31 @@
 @import "bootstrap/variables";
+@import "bootstrap/mixins";
 
 div#login {
-	background-color: $grayLight;
-	border: 10px solid $grayDark;
+	background-color: $white;
+	border: 3px solid $grayLighter;
+	padding: 20px 0 0;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
 	
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
+	@include border-radius(20px);
+	
+	@include box-shadow(0 4px 5px rgba(0,0,0,.3));
+	
+	form {
+		margin-bottom: 0px;
+	}
+	
+	div.actions {
+		padding-bottom: 20px;
+		margin-bottom: 0px;
+		
+		-webkit-border-bottom-left-radius: 20px;
+		-moz-border-radius-bottomleft: 20px;
+		border-bottom-left-radius: 20px;
+		-webkit-border-bottom-right-radius: 20px;
+		-moz-border-radius-bottomright: 20px;
+		border-bottom-right-radius: 20px;
+	}
 }
