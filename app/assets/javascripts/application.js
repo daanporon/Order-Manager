@@ -10,5 +10,29 @@
 //= require_tree .
 
 jQuery("document").ready(function() {
-	$('.type-filter li a').twipsy({})
+	$('li.product .actions a').twipsy({
+		placement: 'below'
+	});
+	
+	$('li.product').hover(function() {
+		$(this).find('.actions').show();
+	}, function() {
+		$(this).find('.actions').hide();
+	});
+	
+	$('li.product .actions a').click(function(e) {
+		e.preventDefault();
+		var panel = $('div.panels div.panel-container div.panel');
+		// keep color + don't hide icons of $(this).closest('li.product');
+		if (panel.is('.active')) {
+			$('div.panels div.panel-container div.panel').removeClass('active');
+		} else {
+			$('div.panels div.panel-container div.panel').addClass('active');	
+		}
+		return false;
+	});
+	
+	$('div.panels div.panel-container div.panel a.close').click(function(e) {
+		$('div.panels div.panel-container div.panel').removeClass('active');
+	});
 });

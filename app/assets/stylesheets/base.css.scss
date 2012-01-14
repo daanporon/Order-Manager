@@ -7,23 +7,9 @@ html {
 body {
 	height: 100%;
 	margin: 0;	
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-	@include directional-gradient($gray -0%, $grayDark 100%, -45deg);
+	background-color: $blue;
 }
 
-.topbar {
-	
-	h3 {
-		padding-left: 10px;
-	}
-}
-
-.container {
-	width: auto;
-}
-
-.content {
-	padding: 40px;
-	
+div.main {
+	margin-top: 60px;
 }
